@@ -1,5 +1,65 @@
-template-repository (1.0-1) unstable; urgency=medium
+jerasure (2.0.0+2017.04.10.git.de1739cc84-2) unstable; urgency=medium
 
-  * Initial release
+  [ Daniel Baumann ]
+  * Non-maintainer upload.
+  * Updating standards version to 4.1.0.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Bump my copyright year
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+  * Use debhelper-compat instead of debian/compat.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 10 Jan 2021 20:54:08 +0100
+
+jerasure (2.0.0+2017.04.10.git.de1739cc84-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ James Page ]
+  * Resync with Ubuntu.
+  * Updates for Ubuntu MIR:
+    - d/control,copyright: Update upstream location to jerasure.org
+      (Closes: #772535)
+    - d/control,rules: Add BD on gf-complete-tools, enable tests,
+      set GF_COMPLETE_DIR.
+    - d/rules: Enable parallel build.
+    - d/control: Add Multi-Arch: same to libjerasure{2,-dev}.
+  * d/control: Bumped Standards-Version to 3.9.6, no changes.
+  * d/copyright: Switch BSD -> BSD-3-clause.
+
+  [ Ondřej Nový ]
+  * New upstream version (master)
+  * Fixed VCS URLs (https).
+  * Move to OpenStack PKG team
+  * Bump debhelper compat version to 10
+  * Change upstream git to http://lab.jerasure.org/jerasure/jerasure.git
+  * Standards-Version is 4.0.0 now (no changes needed)
+  * d/copyright: Added myself for Debian part
+  * d/control: Removed autotools-dev B-D
+  * Remove autoreconf and parallel option from dh, it's default now
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Updating standards version to 4.0.0.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+
+ -- Ondřej Nový <onovy@debian.org>  Sun, 06 Aug 2017 02:26:07 +0200
+
+jerasure (2.0.0-2) unstable; urgency=medium
+
+  * debian/control: add Depends on libgf-complete-dev for
+    libjerasure-dev (Closes: #772673). Thanks to Dmitry Smirnov
+    <onlyjob@debian.org> for the bug report.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 10 Dec 2014 08:30:28 +0000
+
+jerasure (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #750766).
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 25 May 2014 16:35:49 +0800

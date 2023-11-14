@@ -1,0 +1,16 @@
+Description: Do not use sse
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: no
+Last-Update: 2014-06-07
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -34,7 +34,7 @@
+ # Checks for typedefs, structures, and compiler characteristics.
+ AC_TYPE_UINT32_T
+ AC_TYPE_UINT64_T
+-AX_EXT
++#AX_EXT
+ 
+ AC_ARG_ENABLE([sse],
+               AS_HELP_STRING([--disable-sse], [Build without SSE optimizations]),
